@@ -1,0 +1,94 @@
+
+#download GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta first
+
+
+
+
+# some details below
+----------------------------------------
+
+grep -n ">chr" GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta 
+1:>chr1  AC:CM000663.2  gi:568336023  LN:248956422  rl:Chromosome  M5:6aef897c3d6ff0c78aff06ac189178dd  AS:GRCh38
+3556523:>chr2  AC:CM000664.2  gi:568336022  LN:242193529  rl:Chromosome  M5:f98db672eb0993dcfdabafe2a882905c  AS:GRCh38
+7016432:>chr3  AC:CM000665.2  gi:568336021  LN:198295559  rl:Chromosome  M5:76635a41ea913a405ded820447d067b0  AS:GRCh38
+9849227:>chr4  AC:CM000666.2  gi:568336020  LN:190214555  rl:Chromosome  M5:3210fecf1eb92d5489da4346b3fddc6e  AS:GRCh38
+12566579:>chr5  AC:CM000667.2  gi:568336019  LN:181538259  rl:Chromosome  M5:a811b3dc9fe66af729dc0dddf7fa4f13  AS:GRCh38  hm:47309185-49591369
+15159984:>chr6  AC:CM000668.2  gi:568336018  LN:170805979  rl:Chromosome  M5:5691468a67c7e7a7b5f2a3a683792c29  AS:GRCh38
+17600071:>chr7  AC:CM000669.2  gi:568336017  LN:159345973  rl:Chromosome  M5:cc044cc2256a1141212660fb07b6171e  AS:GRCh38
+19876444:>chr8  AC:CM000670.2  gi:568336016  LN:145138636  rl:Chromosome  M5:c67955b5f7815a9a1edfaa15893d3616  AS:GRCh38
+21949855:>chr9  AC:CM000671.2  gi:568336015  LN:138394717  rl:Chromosome  M5:6c198acf68b5af7b9d676dfdd531b5de  AS:GRCh38
+23926924:>chr10  AC:CM000672.2  gi:568336014  LN:133797422  rl:Chromosome  M5:c0eeee7acfdaf31b770a509bdaa6e51a  AS:GRCh38
+25838317:>chr11  AC:CM000673.2  gi:568336013  LN:135086622  rl:Chromosome  M5:1511375dc2dd1b633af8cf439ae90cec  AS:GRCh38
+27768127:>chr12  AC:CM000674.2  gi:568336012  LN:133275309  rl:Chromosome  M5:96e414eace405d8c27a6d35ba19df56f  AS:GRCh38
+29672061:>chr13  AC:CM000675.2  gi:568336011  LN:114364328  rl:Chromosome  M5:a5437debe2ef9c9ef8f3ea2874ae1d82  AS:GRCh38
+31305839:>chr14  AC:CM000676.2  gi:568336010  LN:107043718  rl:Chromosome  M5:e0f0eecc3bcab6178c62b6211565c807  AS:GRCh38  hm:multiple
+32835036:>chr15  AC:CM000677.2  gi:568336009  LN:101991189  rl:Chromosome  M5:f036bd11158407596ca6bf3581454706  AS:GRCh38
+34292054:>chr16  AC:CM000678.2  gi:568336008  LN:90338345  rl:Chromosome  M5:db2d37c8b7d019caaf2dd64ba3a6f33a  AS:GRCh38
+35582603:>chr17  AC:CM000679.2  gi:568336007  LN:83257441  rl:Chromosome  M5:f9a0fb01553adb183568e3eb9d8626db  AS:GRCh38
+36771997:>chr18  AC:CM000680.2  gi:568336006  LN:80373285  rl:Chromosome  M5:11eeaa801f6b0e2e36a1138616b8ee9a  AS:GRCh38
+37920188:>chr19  AC:CM000681.2  gi:568336005  LN:58617616  rl:Chromosome  M5:85f9f4fc152c58cb7913c06d6b98573a  AS:GRCh38  hm:multiple
+38757584:>chr20  AC:CM000682.2  gi:568336004  LN:64444167  rl:Chromosome  M5:b18e6c531b0bd70e949a7fc20859cb01  AS:GRCh38
+39678216:>chr21  AC:CM000683.2  gi:568336003  LN:46709983  rl:Chromosome  M5:974dc7aec0b755b19f031418fdedf293  AS:GRCh38  hm:multiple
+40345503:>chr22  AC:CM000684.2  gi:568336002  LN:50818468  rl:Chromosome  M5:ac37ec46683600f808cdd41eac1d55cd  AS:GRCh38  hm:multiple
+41071483:>chrX  AC:CM000685.2  gi:568336001  LN:156040895  rl:Chromosome  M5:2b3a55ff7f58eb308420c8a9b11cac50  AS:GRCh38
+43300640:>chrY  AC:CM000686.2  gi:568336000  LN:57227415  rl:Chromosome  M5:ce3e31103314a704255f3cd90369ecce  AS:GRCh38  hm:10001-2781479,56887903-57217415
+44118176:>chrM  AC:J01415.2  gi:113200490  LN:16569  rl:Mitochondrion  M5:c68f52674c9fb33aef52dcf399755519  AS:GRCh38  tp:circular
+44118414:>chr1_KI270706v1_random  AC:KI270706.1  gi:568335410  LN:175055  rg:chr1  rl:unlocalized  M5:62def1a794b3e18192863d187af956e6  AS:GRCh38
+44120916:>chr1_KI270707v1_random  AC:KI270707.1  gi:568335409  LN:32032  rg:chr1  rl:unlocalized  M5:78135804eb15220565483b7cdd02f3be  AS:GRCh38
+44121375:>chr1_KI270708v1_random  AC:KI270708.1  gi:568335408  LN:127682  rg:chr1  rl:unlocalized  M5:1e95e047b98ed92148dd84d6c037158c  AS:GRCh38
+... # others
+
+
+sed -n 2,3556522p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr1
+sed -n 3556524,7016431p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr2
+sed -n 7016433,9849226p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr3
+sed -n 9849228,12566578p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr4
+sed -n 12566580,15159983p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr5
+sed -n 15159985,17600070p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr6
+sed -n 17600072,19876443p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr7
+sed -n 19876445,21949854p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr8
+sed -n 21949856,23926923p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr9
+sed -n 23926925,25838316p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr10
+
+sed -n 25838318,27768126p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr11
+sed -n 27768128,29672060p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr12
+sed -n 29672062,31305838p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr13
+sed -n 31305840,32835035p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr14
+sed -n 32835037,34292053p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr15
+sed -n 34292055,35582602p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr16
+sed -n 35582604,36771996p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr17
+sed -n 36771998,37920187p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr18
+sed -n 37920189,38757583p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr19
+sed -n 38757585,39678215p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr20
+
+sed -n 39678217,40345502p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr21
+sed -n 40345504,41071482p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chr22
+sed -n 41071484,43300639p GRCh38_no_alt_analysis_set_GCA_000001405.15.fasta | awk '{print}' ORS='' > chrX
+
+wc -c chr*
+
+ 248956422 chr1
+ 133797422 chr10
+ 135086622 chr11
+ 133275309 chr12
+ 114364328 chr13
+ 107043718 chr14
+ 101991189 chr15
+  90338345 chr16
+  83257441 chr17
+  80373285 chr18
+  58617616 chr19
+ 242193529 chr2
+  64444167 chr20
+  46709983 chr21
+  50818468 chr22
+ 198295559 chr3
+ 190214555 chr4
+ 181538259 chr5
+ 170805979 chr6
+ 159345973 chr7
+ 145138636 chr8
+ 138394717 chr9
+ 156040895 chrX
+3031042417 total
+

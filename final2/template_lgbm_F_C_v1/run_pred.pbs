@@ -1,0 +1,14 @@
+#PBS -N F_C_x
+#PBS -l nodes=1:ppn=2,mem=20gb
+#PBS -l walltime=72:00:00
+#PBS -j oe
+#PBS -S /bin/bash
+#PBS -e err.$PBS_JOBNAME.log
+#PBS -o out.$PBS_JOBNAME.log
+
+cd $PBS_O_WORKDIR
+echo Time is `date`
+echo Directory is `pwd`
+
+time ./bash_pred.sh
+
