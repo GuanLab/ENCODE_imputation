@@ -32,19 +32,38 @@ Download and decompress the challenge data and put them in the corresponding dir
 
 ---
 
-Notably, reproducing the entire model training and prediction steps requires considerable time, memory and disk space. A good start would be training a subset of models and making the corresponding predictions.
-
 ## Preprocessing data
 Go to directory **data** and follow the steps in **bash.sh**.
 
+---
+
+Notably, reproducing the entire model training and prediction steps requires considerable time, memory and disk space. A good start would be training a subset of models and making the corresponding predictions. Here we provide an example for building models and making predictions for epigenome C07M29 (H3K9me3 in Caco-2) during the challenge.
+
 ## Train models
-Go to directory **final1** and **final2**, and run the "bash_run0-5.sh" respectively. The **final1** and **final2** are both lightGBM models with identical overall settings. The differences reside in the parameters used in model building.
+Go to directory **final1** and **final2**, and run the "bash_run_example.sh" respectively. The **final1** and **final2** are both lightGBM models with identical overall settings. The differences reside in the parameters used in model building. This will create nine parallel folders named "lgbm_CDEH_I_v1_01-09", using epigenomes from different cell types as the training and validation targets. For simplicity, we name the epigeneic marks with captital letters as follows:
+
+| letter | challenge id | mark name |
+| ------ | ------------ | --------- |
+| C      | M02          | DNase-seq |
+| D      | M18          | H3K36me3  |
+| E      | M17          | H3K27me3  |
+| F      | M16          | H3K27ac   |
+| G      | M20          | H3K4me1   |
+| H      | M22          | H3K4me3   |
+| I      | M29          | H3K9me3   |
+| J      | M01          | ATAC-seq  |
+| K      | M26          | H3K9ac    |
+| L      | M21          | H3K4me2   |
+| M      | M03          | H2AFZ     |
+| N      | M25          | H3K79me2  |
+
+For this example "CDEH_I", we used four marks (**C**, **D**, **E**, **H**) as cell type-specific features to predict mark **I**. (For complete model training, run "bash_run0-5.sh".)
 
 ## Make predictions
-Go to directory **final1** and **final2**, and run the "bash_pred0-5.sh" respectively.
+Go to directory **final1** and **final2**, and run the "bash_pred_example.sh" respectively. Then run "bash_stack_example.sh" to stack predictions from multiple models. This will generate prediction files named as "pred25bp_C07M29_chrX.npy" in each directory. (For complete model training, run bash_pred0-5.sh" and "bash_stack.sh".)
 
-## Stacking predictions
-Go to directory **submission** and follow the steps in "bash_stack.sh".
+## Final predictions
+Go to directory **submission** and follow the steps in "bash_stack_example.sh". This will create a file called C07M29.bigwig, which is the final submission file to the challenge. (For complete model training, run "bash_stack.sh".)
 
 
 

@@ -60,7 +60,7 @@ dict_model_count={}
 for i in np.arange(len(model_all)):
     dict_model_count[model_all[i]]=tmp[i]
 
-mat_max=np.loadtxt('../stats/max.txt')
+mat_max=np.loadtxt('../data/stats/max.txt')
 assay_all=['M01','M02','M16','M17','M18','M20','M22','M29']
 cell_all=[]
 for i in np.arange(1,52):
@@ -68,7 +68,7 @@ for i in np.arange(1,52):
 
 df_max=pd.DataFrame(data=mat_max, index=cell_all, columns=assay_all)
 
-path0='../baseline_avg_final/'
+path0='../data/baseline_avg_final/'
 path1='../final1/'
 path2='../final2/'
 path3='../final3/'
@@ -93,7 +93,7 @@ for the_id in id_all:
         ###################
         pred_final = avg
         ## 3.1 save npy for sanity check
-        np.save('pred25bp_' + the_id + '_' + the_chr, pred_final)
+#        np.save('pred25bp_' + the_id + '_' + the_chr, pred_final)
         ###################
         ## 4. write bigwig; every 25bp version
         starts=np.arange(0, chr_len[the_chr], 25)
